@@ -1,0 +1,85 @@
+
+        //Var primitive types:
+        // numeros inteiros
+        /*
+        byte => 8 bits(-128 a 127);
+        short => 16 bits(-32.768 a 32.767);
+        int => 32 bits(-2.147.483.648 a 2.147.483.647);
+        long => 64 bits(-9.223.372.036.854.775.808 a 9.223.372.036.854.775.807);
+        //Numeros decimais
+        float => 32 bits(precisão simples);
+        double => 64 bits(precisão dupla);
+        //Caracteres
+        char => caracteres('a', 'b', 'c') Um unico caractere;
+        usas aspas simples: '';
+        String => frases("Hello, World!") não é tipo primitivo;
+        ^letra maiuscula no começo ----^----"" aspas duplas;
+        //boleano
+        boolean => true or false;
+        */
+        byte b = 100;
+        short s = 1000;
+        int i = 100000;
+        long l = 100000L;
+        float f = 1.0F;
+        double d = 3.1415;
+        char c = 'a';
+        boolean bool = true;
+        String str = "ABC";
+
+        //            0  1  2  3  4  5  6  7  8  9
+        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] nums2 = new int[10];
+        nums2[0] = 5;
+
+        if(str.isBlank()) {
+            System.out.println("Verdadeiro");
+        } else if(str == "ABC") {
+            System.out.println("Falso é abc");
+        } else {
+            System.out.println("Caso falso para ambas");
+        }
+
+        System.out.println(nums2[0]);
+
+                String[] nomes = {"Julia", "Fernanda", "João", "Paulo"};
+
+                ArrayList<String> lista = new ArrayList<>();
+                lista.add("Item - 1");
+                lista.add("Item - 2");
+                lista.add("Item - 3");
+                lista.set(2, "Bianca");
+
+                for(int i = 0; i < nomes.length; i++) {
+                    lista.add(nomes[i]);
+                };
+                /*
+                for(int i = 0; i < lista.size(); i++) {
+                System.out.println(lista.get(i));
+                };
+
+                //mesma coisa que acima
+                for (String nome : lista) {
+                    System.out.println(nome);
+                };
+                */
+                /*
+                while (lista.size() > 3) {
+                    lista.remove(0);
+                    System.out.println(lista.get(0));
+                };
+            */
+
+                float resultado = 10.0F;
+                int resultado1 = (int) resultado;
+
+                int int1 = 10;
+                double double1 = int1;
+
+                String str1 = "10";
+                int strInt = Integer.parseInt(str1);
+
+                int int2 = 10;
+                String intStr = String.valueOf(int2);
+
+                System.out.println(intStr);
