@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="com.operadores.TelaValores" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="264.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtNum" layoutX="142.0" layoutY="28.0" prefHeight="25.0" prefWidth="80.0" />
+      <TextField fx:id="txtDen" layoutX="142.0" layoutY="77.0" prefHeight="25.0" prefWidth="80.0" />
+      <Label layoutX="39.0" layoutY="32.0" text="Numerador:" />
+      <Label layoutX="39.0" layoutY="81.0" text="Denominador:" />
+      <Label layoutX="39.0" layoutY="183.0" text="Divisão:" />
+      <Label layoutX="39.0" layoutY="220.0" text="Resto:" />
+      <Label fx:id="lblDiv" layoutX="168.0" layoutY="183.0" text="0" />
+      <Label fx:id="lblRes" layoutX="168.0" layoutY="220.0" text="0" />
+      <Button fx:id="btnDiv" layoutX="44.0" layoutY="132.0" mnemonicParsing="false" onAction="#onClickDivision" prefHeight="25.0" prefWidth="172.0" text="Dividir" />
+   </children>
+</Pane>
