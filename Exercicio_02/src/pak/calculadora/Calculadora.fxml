@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:controller="pak.calculadora.Calculadora" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="30.0" layoutY="33.0" text="Insira o primeiro valor:" />
+      <TextField fx:id="txtN1" layoutX="162.0" layoutY="29.0" />
+      <Label layoutX="30.0" layoutY="69.0" text="Insira o segundo valor:" />
+      <TextField fx:id="txtN2" layoutX="162.0" layoutY="65.0" />
+      <ComboBox fx:id="cmbOP" layoutX="30.0" layoutY="113.0" prefHeight="25.0" prefWidth="281.0" promptText="Selecione a operação" />
+      <Label fx:id="lblRs" layoutX="148.0" layoutY="192.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCC" layoutX="30.0" layoutY="322.0" mnemonicParsing="false" onAction="#onClickCalculate" prefHeight="25.0" prefWidth="281.0" text="Calcular" />
+   </children>
+</Pane>
